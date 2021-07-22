@@ -7,8 +7,16 @@
     <script src="main.js"></script>
     <title>Minha Página</title>
 </head>
-<body>
+<body onload="rodar()">
    <H1>Minha Página</H1>
-
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <h3 id="agradecimento" onclick="redirecionar()"></h3>
+    <p id="mouse" onmouseover="passou(this)" onmouseout="saiu(this)" > Passe o mouse aqui</p>
+    <p onmouseover="passou(this)" onmouseout="saiu(this)" > Passe o mouse aqui</p>
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
 </body>
 </html>
